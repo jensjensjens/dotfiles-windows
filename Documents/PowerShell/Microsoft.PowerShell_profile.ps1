@@ -25,6 +25,12 @@ if (-not (Get-Module posh-git -ListAvailable)) {
 }
 Import-Module posh-git
 
+#### Setup z ####
+if (-not (Get-Module z -ListAvailable)) {
+  Install-Module -Name z -Scope CurrentUser -Force
+}
+Import-Module z
+
 #### Setup aliases ####
 function Invoke-Config { git --git-dir $HOME/.cfg/ --work-tree $HOME $args }
 function Invoke-ConfigUi { gitui --directory $HOME/.cfg/ --workdir $HOME $args }
