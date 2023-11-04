@@ -1,0 +1,58 @@
+[alias]
+	commit-amend = "commit --amend -C HEAD"
+	commit-undo = "reset --soft HEAD^"
+	log-new = "log main..HEAD"
+	log-old = "log HEAD..main"
+	log-tag = "log --oneline --decorate --tags --no-walk"
+	log-tree = "log --all --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'"
+	log-tree-all = "log --oneline --decorate --graph --all"
+	pfetch = "fetch --prune"
+	violence = "git add . && git commit --amend --no-edit && git push --force-with-lease"
+
+[commit]
+	gpgsign = true
+
+[core]
+	editor = "nvim"
+	sshCommand = "ssh -i ~/.ssh/github"
+
+[delta]
+	line-numbers = false
+
+[diff]
+	tool = "vimdiff"
+
+[difftool]
+	prompt = false
+
+[gpg]
+	format = "ssh"
+
+[init]
+	defaultBranch = "main"
+
+[interactive]
+	diffFilter = "delta --color-only"
+
+[mergetool]
+	prompt = false
+
+[pull]
+	rebase = true
+
+[push]
+	default = "current"
+
+[rebase]
+	autoStash = true
+
+[tag]
+	gpgsign = true
+
+[user]
+	email = "19902144+jensjensjens@users.noreply.github.com"
+	name = "Jens Sigvardsson"
+	signingkey = "~/.ssh/github.pub"
+
+[include]
+	path = "~/.config/git/config-work"
