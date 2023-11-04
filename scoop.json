@@ -22,6 +22,13 @@
             "Updated": "2023-11-04T12:53:20.9273342+01:00"
         },
         {
+            "Name": "cacert",
+            "Source": "main",
+            "Version": "2023-08-22",
+            "Info": "",
+            "Updated": "2023-11-04T17:24:12.6177423+01:00"
+        },
+        {
             "Name": "coreutils",
             "Source": "main",
             "Version": "5.97.3",
@@ -85,6 +92,20 @@
             "Updated": "2023-11-04T07:40:42.9044011+01:00"
         },
         {
+            "Name": "go",
+            "Source": "main",
+            "Version": "1.21.3",
+            "Info": "",
+            "Updated": "2023-11-04T17:06:21.4844944+01:00"
+        },
+        {
+            "Name": "gzip",
+            "Source": "main",
+            "Version": "1.3.12",
+            "Info": "",
+            "Updated": "2023-11-04T17:23:49.50902+01:00"
+        },
+        {
             "Name": "jq",
             "Source": "main",
             "Version": "1.7",
@@ -127,11 +148,32 @@
             "Updated": "2023-11-03T15:56:56.1594379+01:00"
         },
         {
+            "Name": "unzip",
+            "Source": "main",
+            "Version": "6.00",
+            "Info": "",
+            "Updated": "2023-11-04T17:24:26.8184314+01:00"
+        },
+        {
+            "Name": "wget",
+            "Source": "main",
+            "Version": "1.21.4",
+            "Info": "",
+            "Updated": "2023-11-04T17:24:15.7263454+01:00"
+        },
+        {
             "Name": "yq",
             "Source": "main",
             "Version": "4.35.2",
             "Info": "",
             "Updated": "2023-11-04T08:04:55.6667801+01:00"
+        },
+        {
+            "Name": "zip",
+            "Source": "main",
+            "Version": "3.0",
+            "Info": "",
+            "Updated": "2023-11-04T17:24:33.2850313+01:00"
         }
     ],
     "buckets": [
