@@ -1,0 +1,138 @@
+{
+    "buckets": [
+        {
+            "Name": "main",
+            "Source": "https://github.com/ScoopInstaller/Main.git",
+            "Updated": "2023-11-04T09:24:51+01:00",
+            "Manifests": 1262
+        }
+    ],
+    "apps": [
+        {
+            "Version": "2.22.0",
+            "Updated": "2023-11-04T08:15:11.0952199+01:00",
+            "Source": "main",
+            "Name": "1password-cli",
+            "Info": ""
+        },
+        {
+            "Version": "23.01",
+            "Updated": "2023-11-03T07:17:59.0735026+01:00",
+            "Source": "main",
+            "Name": "7zip",
+            "Info": ""
+        },
+        {
+            "Version": "0.24.0",
+            "Updated": "2023-11-04T12:53:20.9273342+01:00",
+            "Source": "main",
+            "Name": "bat",
+            "Info": ""
+        },
+        {
+            "Version": "5.97.3",
+            "Updated": "2023-11-04T07:42:43.1705943+01:00",
+            "Source": "main",
+            "Name": "coreutils",
+            "Info": ""
+        },
+        {
+            "Version": "3.11.2",
+            "Updated": "2023-11-04T08:07:43.3302979+01:00",
+            "Source": "main",
+            "Name": "dark",
+            "Info": ""
+        },
+        {
+            "Version": "0.16.5",
+            "Updated": "2023-11-04T12:54:45.6338666+01:00",
+            "Source": "main",
+            "Name": "delta",
+            "Info": ""
+        },
+        {
+            "Version": "0.15.2",
+            "Updated": "2023-11-04T07:25:42.7513524+01:00",
+            "Source": "main",
+            "Name": "eza",
+            "Info": ""
+        },
+        {
+            "Version": "30.2.0",
+            "Updated": "2023-11-04T08:05:07.3531776+01:00",
+            "Source": "main",
+            "Name": "fx",
+            "Info": ""
+        },
+        {
+            "Version": "0.43.0",
+            "Updated": "2023-11-03T07:12:13.3832298+01:00",
+            "Source": "main",
+            "Name": "fzf",
+            "Info": ""
+        },
+        {
+            "Version": "11.2.0",
+            "Updated": "2023-11-03T07:19:23.297111+01:00",
+            "Source": "main",
+            "Name": "gcc",
+            "Info": ""
+        },
+        {
+            "Version": "0.24.3",
+            "Updated": "2023-11-04T07:40:42.9044011+01:00",
+            "Source": "main",
+            "Name": "gitui",
+            "Info": ""
+        },
+        {
+            "Version": "1.7",
+            "Updated": "2023-11-04T08:03:08.4512507+01:00",
+            "Source": "main",
+            "Name": "jq",
+            "Info": ""
+        },
+        {
+            "Version": "r31",
+            "Updated": "2023-11-04T12:52:00.1047877+01:00",
+            "Source": "main",
+            "Name": "lf",
+            "Info": ""
+        },
+        {
+            "Version": "3.12.0",
+            "Updated": "2023-11-04T08:08:48.9223414+01:00",
+            "Source": "main",
+            "Name": "python",
+            "Info": ""
+        },
+        {
+            "Version": "13.0.0",
+            "Updated": "2023-11-03T07:11:55.8835294+01:00",
+            "Source": "main",
+            "Name": "ripgrep",
+            "Info": ""
+        },
+        {
+            "Version": "1.73.0",
+            "Updated": "2023-11-04T07:41:26.512122+01:00",
+            "Source": "main",
+            "Name": "rust",
+            "Info": ""
+        },
+        {
+            "Version": "1.16.0",
+            "Updated": "2023-11-03T15:56:56.1594379+01:00",
+            "Source": "main",
+            "Name": "starship",
+            "Info": ""
+        },
+        {
+            "Version": "4.35.2",
+            "Updated": "2023-11-04T08:04:55.6667801+01:00",
+            "Source": "main",
+            "Name": "yq",
+            "Info": ""
+        }
+    ]
+}

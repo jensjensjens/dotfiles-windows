@@ -6,6 +6,26 @@ Set-PSReadLineOption -EditMode Vi
 Set-PSReadLineKeyHandler -Chord Ctrl-r -Function ReverseSearchHistory -ViMode Insert
 Set-PSReadLineKeyHandler -Chord Ctrl-r -Function ReverseSearchHistory -ViMode Command
 
+function which ($command) { 
+  Get-Command -Name $command -ErrorAction SilentlyContinue | 
+  Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue 
+} 
+
+#### Setup PSFzf ####
+if (-not (Get-Module PSFzf -ListAvailable)) {
+  write-output "installing psfzf"
+  install-module -name psfzf -scope currentuser -force
+}
+Import-Module PSFzf
+Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
+
+#### Setup posh-git ####
+if (-not (Get-Module posh-git -ListAvailable)) {
+  Install-Module -Name posh-git -Scope CurrentUser -Force
+}
+Import-Module posh-git
+
+#### Setup aliases ####
 function Invoke-Config { git --git-dir $HOME/.cfg/ --work-tree $HOME $args }
 function Invoke-ConfigUi { gitui --directory $HOME/.cfg/ --workdir $HOME $args }
 function Invoke-Eza { eza.exe --icons --git $args }
@@ -15,20 +35,6 @@ function Invoke-EzaLa { eza -la }
 function Invoke-EzaTree { eza eza --all --tree --ignore-glob "__pycache__|node_modules|.git|venv|obj" --icons --sort type }
 function Invoke-NvimDiff { nvim -d }
 function Invoke-ScoopInstall { scoop install $args; scoop export > $HOME/scoop.json }
-
-function which ($command) { 
-  Get-Command -Name $command -ErrorAction SilentlyContinue | 
-  Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue 
-} 
-
-if (-not (Get-Module PSFzf)) {
-  Write-Output "Installing PSFzf"
-  Install-Module -Name PSFzf -Scope CurrentUser -Force
-}
-
-Import-Module PSFzf
-Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
-
 Set-Alias -Name config -Value Invoke-Config
 Set-Alias -Name configui -Value Invoke-ConfigUi
 Set-Alias -Name eza -Value Invoke-Eza
