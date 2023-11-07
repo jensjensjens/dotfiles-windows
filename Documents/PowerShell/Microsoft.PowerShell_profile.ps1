@@ -34,6 +34,7 @@ Import-Module z
 #### Setup aliases ####
 function Invoke-Config { git --git-dir $HOME/.cfg/ --work-tree $HOME $args }
 function Invoke-ConfigUi { gitui --directory $HOME/.cfg/ --workdir $HOME $args }
+function Invoke-Docs { nvim $env:USERPROFILE/Documents/ }
 function Invoke-Eza { eza.exe --icons --git $args }
 function Invoke-EzaA { eza -a }
 function Invoke-EzaL { eza -l }
@@ -43,6 +44,7 @@ function Invoke-NvimDiff { nvim -d }
 function Invoke-ScoopInstall { scoop install $args; scoop export > $HOME/scoop.json }
 Set-Alias -Name config -Value Invoke-Config
 Set-Alias -Name configui -Value Invoke-ConfigUi
+Set-Alias -Name docs -Value Invoke-Docs
 Set-Alias -Name eza -Value Invoke-Eza
 Set-Alias -Name la -Value Invoke-EzaA
 Set-Alias -Name ll -Value Invoke-EzaL
