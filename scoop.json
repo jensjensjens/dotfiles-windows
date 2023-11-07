@@ -120,6 +120,13 @@
             "Updated": "2023-11-04T12:52:00.1047877+01:00"
         },
         {
+            "Name": "nodejs",
+            "Source": "main",
+            "Version": "21.1.0",
+            "Info": "",
+            "Updated": "2023-11-07T12:23:19.7564467+01:00"
+        },
+        {
             "Name": "python",
             "Source": "main",
             "Version": "3.12.0",
@@ -180,7 +187,7 @@
         {
             "Name": "main",
             "Source": "https://github.com/ScoopInstaller/Main.git",
-            "Updated": "2023-11-04T13:29:36+01:00",
+            "Updated": "2023-11-07T09:25:55+01:00",
             "Manifests": 1262
         }
     ]
